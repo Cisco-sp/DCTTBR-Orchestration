@@ -1,10 +1,13 @@
-- name: GitHub API Request
-  # You may pin to the exact commit or the version.
-  # uses: octokit/request-action@3e29b2ed4fcad52a6453c5856abfd04870a10d65
-  uses: octokit/request-action@v2.0.2
-  with:
-- name: GitHub API Request
-  # You may pin to the exact commit or the version.
-  # uses: octokit/request-action@3e29b2ed4fcad52a6453c5856abfd04870a10d65
-  uses: octokit/request-action@v2.0.2
-nName
+name: Github call Intersight Orchestrator Workflow - Developer Enviroment
+on:
+  push:
+  branches: 
+      - development
+ 
+
+
+ jobs:
+  runs-on: ubuntu-latest
+  steps:
+      uses: fjogeleit/http-request-action@master
+      
